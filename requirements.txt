@@ -1,0 +1,4 @@
+- Ollama (https://ollama.com/)
+- Model: llama3 (ollama run llama3)
+- Kompilator C++ wspierający standard C++17 (np. MSVC 2022)
+- Python 3.x (wymagany do generowania wykresów na ocenę 5.0)
