@@ -7,7 +7,7 @@ void runTests() {
     testData.kcal = 500;
     testData.protein = 20;
     
-    // Sprawdzamy czy dane sie poprawnie zapisuja
+    
     assert(testData.kcal == 500);
     assert(testData.protein == 20);
     

@@ -52,17 +52,17 @@ private slots:
         btn->setText("AI analizuje...");
         resultLabel->setText("Trwa laczenie z Llama3...");
 
-        // Uruchamiamy AI w tle
+       
         fut = std::async(std::launch::async, [this, text]() {
             try {
                 OllamaClient client("llama3");
                 MealData data = client.askForData(text);
 
-                // Wracamy do watku GUI tylko po to, zeby odblokowac przycisk
+               
                 QMetaObject::invokeMethod(this, [this, data]() {
                     if (data.kcal > 0) {
                         resultLabel->setText("Wykres zostal otwarty w osobnym oknie.");
-                        // ODPALAMY WYKRES - dzieki QProcess w srodku, okno C++ nie zamarznie!
+                        
                         ChartGenerator::generateAndRun(data);
                     } else {
                         resultLabel->setText("Blad danych AI.");
