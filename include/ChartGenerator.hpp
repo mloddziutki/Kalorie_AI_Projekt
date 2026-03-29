@@ -24,8 +24,13 @@ public:
                << "plt.show()\n";
         script.close();
 
-       
-        QProcess::startDetached("python", QStringList() << "generated_chart.py");
+#ifdef _WIN32
+        QString pythonCmd = "python";
+#else
+        QString pythonCmd = "python3";
+#endif
+
+        QProcess::startDetached(pythonCmd, QStringList() << "generated_chart.py");
     }
 };
 
