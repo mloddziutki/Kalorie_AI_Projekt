@@ -6,11 +6,9 @@
 
 using json = nlohmann::json;
 
-
 OllamaClient::OllamaClient(std::string modelName) 
     : url("http://localhost:11434"), model(modelName) {
 }
-
 
 MealData OllamaClient::askForData(std::string mealName) {
     httplib::Client cli(url);
@@ -30,15 +28,15 @@ MealData OllamaClient::askForData(std::string mealName) {
             auto j_res = json::parse(res->body);
             std::string responseText = j_res["response"];
             
-            
             std::smatch match;
             std::regex json_regex(R"(\{.*\})");
             if (std::regex_search(responseText, match, json_regex)) {
                 auto j = json::parse(match.str());
-                data.kcal = j.value("kcal", 0);
-                data.protein = j.value("protein", 0);
-                data.fat = j.value("fat", 0);
-                data.carbs = j.value("carbs", 0);
+                // Używamy nowych setterów:
+                data.setKcal(j.value("kcal", 0));
+                data.setProtein(j.value("protein", 0));
+                data.setFat(j.value("fat", 0));
+                data.setCarbs(j.value("carbs", 0));
             }
         }
     } catch (...) {

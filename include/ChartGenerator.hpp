@@ -5,21 +5,30 @@
 #include <fstream>
 #include <QProcess> 
 #include <QString>
+#include <vector>
+#include <numeric>
 
 class ChartGenerator {
 public:
-    static void generateAndRun(const MealData& data) {
+    static void generateAndRun(const std::vector<MealData>& meals) {
+        int totalKcal = 0, totalProtein = 0, totalFat = 0, totalCarbs = 0;
+
+        for (const auto& meal : meals) {
+            totalKcal += meal.getKcal();
+            totalProtein += meal.getProtein();
+            totalFat += meal.getFat();
+            totalCarbs += meal.getCarbs();
+        }
         
         std::ofstream script("generated_chart.py");
         script << "import matplotlib.pyplot as plt\n"
-               << "labels = ['Bialko (" << data.protein << "g)', 'Tluszcz (" << data.fat << "g)', 'Wegle (" << data.carbs << "g)']\n"
-               << "values = [" << data.protein << ", " << data.fat << ", " << data.carbs << "]\n"
+               << "labels = ['Bialko (" << totalProtein << "g)', 'Tluszcz (" << totalFat << "g)', 'Wegle (" << totalCarbs << "g)']\n"
+               << "values = [" << totalProtein << ", " << totalFat << ", " << totalCarbs << "]\n"
                << "colors = ['#ff9999','#66b3ff','#99ff99']\n"
                << "fig, ax = plt.subplots(figsize=(7, 7))\n"
                << "ax.pie(values, labels=labels, autopct='%1.1f%%', startangle=140, colors=colors)\n"
-               << "plt.title('Podsumowanie posilku: " << data.kcal << " kcal')\n"
-              
-               << "info_text = f'Skladniki: Bialko { " << data.protein << " }g | Tluszcz { " << data.fat << " }g | Wegle { " << data.carbs << " }g'\n"
+               << "plt.title('Podsumowanie dnia: " << totalKcal << " kcal')\n"
+               << "info_text = f'Lacznie: Bialko {" << totalProtein << "}g | Tluszcz {" << totalFat << "}g | Wegle {" << totalCarbs << "}g'\n"
                << "plt.figtext(0.5, 0.05, info_text, ha='center', fontsize=12, bbox=dict(facecolor='orange', alpha=0.2))\n"
                << "plt.show()\n";
         script.close();
@@ -29,7 +38,6 @@ public:
 #else
         QString pythonCmd = "python3";
 #endif
-
         QProcess::startDetached(pythonCmd, QStringList() << "generated_chart.py");
     }
 };

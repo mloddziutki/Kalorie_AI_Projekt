@@ -1,23 +1,33 @@
-/**
- * @file MealData.hpp
- * @brief Definicja struktury danych posiłku.
- */
-
 #ifndef MEALDATA_HPP
 #define MEALDATA_HPP
 
 #include <string>
 
-/**
- * @class MealData
- * @brief Przechowuje informacje o kaloryczności i makroskładnikach.
- */
-struct MealData {
-    int kcal = 0;      /**< Liczba kalorii */
-    int protein = 0;   /**< Gramy białka */
-    int fat = 0;       /**< Gramy tłuszczu */
-    int carbs = 0;     /**< Gramy węglowodanów */
-    std::string raw_description; /**< Oryginalny opis posiłku */
+class MealData {
+private:
+    int kcal;
+    int protein;
+    int fat;
+    int carbs;
+    std::string raw_description;
+
+public:
+    MealData() : kcal(0), protein(0), fat(0), carbs(0) {}
+
+    void setKcal(int k) { kcal = k; }
+    int getKcal() const { return kcal; }
+
+    void setProtein(int p) { protein = p; }
+    int getProtein() const { return protein; }
+
+    void setFat(int f) { fat = f; }
+    int getFat() const { return fat; }
+
+    void setCarbs(int c) { carbs = c; }
+    int getCarbs() const { return carbs; }
+
+    void setRawDescription(const std::string& desc) { raw_description = desc; }
+    std::string getRawDescription() const { return raw_description; }
 };
 
 #endif
