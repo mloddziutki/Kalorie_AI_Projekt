@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['wymagania_3a_0',['Spełnione wymagania:',['../C:/Kalorie_Projekt/README.md#autotoc_md2',1,'']]]
+  ['technologie_0',['Technologie',['../index.html#tech_sec',1,'']]]
 ];

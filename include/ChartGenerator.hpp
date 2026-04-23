@@ -53,9 +53,9 @@ public:
                << "info_text = f'Lacznie: Bialko {" << totalProtein << "}g | Tluszcz {" << totalFat << "}g | Wegle {" << totalCarbs << "}g'\n"
                << "plt.figtext(0.5, 0.05, info_text, ha='center', fontsize=12, bbox=dict(facecolor='orange', alpha=0.2))\n"
                << "plt.show()\n";
-        script.close(); // Kończymy pisać skrypt
+        script.close(); 
 
-        // --- 3. URUCHAMIANIE PROCESU (IPC - Inter-Process Communication) ---
+        // URUCHAMIANIE PROCESU 
         // Sprawdzamy system operacyjny, żeby wiedzieć jak zawołać Pythona
 #ifdef _WIN32
         QString pythonCmd = "python";  // Na Windows zazwyczaj wystarczy "python"
@@ -64,7 +64,7 @@ public:
 #endif
 
         // QProcess::startDetached odpala Pythona jako zupełnie osobny proces.
-        // Nasz program w C++ nie musi czekać, aż zamkniesz okno z wykresem.
+        
         QProcess::startDetached(pythonCmd, QStringList() << "generated_chart.py");
     }
 };

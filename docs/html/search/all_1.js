@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['bad_5fany_5fcast_0',['bad_any_cast',['../classhttplib_1_1bad__any__cast.html',1,'httplib']]],
-  ['bodyreader_1',['BodyReader',['../structhttplib_1_1detail_1_1_body_reader.html',1,'httplib::detail']]],
-  ['bufferstream_2',['BufferStream',['../classhttplib_1_1detail_1_1_buffer_stream.html',1,'httplib::detail']]]
+  ['calorieapp_0',['CalorieApp',['../class_calorie_app.html',1,'CalorieApp'],['../class_calorie_app.html#ad8dd22ad063bfb38fe3446b220fa4130',1,'CalorieApp::CalorieApp()']]],
+  ['cel_20projektu_1',['Cel projektu',['../C:/Kalorie_Projekt/README.md#autotoc_md2',1,'']]],
+  ['chartgenerator_2',['ChartGenerator',['../class_chart_generator.html',1,'']]],
+  ['chartgenerator_2ehpp_3',['ChartGenerator.hpp',['../_chart_generator_8hpp.html',1,'']]]
 ];

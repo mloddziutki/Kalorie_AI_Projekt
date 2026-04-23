@@ -31,7 +31,7 @@ MealData OllamaClient::askForData(std::string mealName) {
     httplib::Client cli(url);
     MealData data; // Pusty pojemnik na dane
     
-    // 2. Przygotowujemy "paczka danych" (JSON) do wysłania
+    //  Przygotowujemy "paczka danych" (JSON) do wysłania
     // Musimy powiedzieć AI: jakiego modelu użyć, o co pytamy i jak ma odpowiedzieć.
     json body = {
         {"model", model},
@@ -45,16 +45,16 @@ MealData OllamaClient::askForData(std::string mealName) {
     };
 
     try {
-        // 3. WYSYŁANIE ZAPYTANIA
+        //  WYSYŁANIE ZAPYTANIA
         // Metoda POST wysyła nasz JSON do "drzwi" o nazwie /api/generate
         if (auto res = cli.Post("/api/generate", body.dump(), "application/json")) {
             
-            // 4. CZYTANIE ODPOWIEDZI
+            // CZYTANIE ODPOWIEDZI
             // Zamieniamy surowy tekst z serwera na obiekt JSON
             auto j_res = json::parse(res->body);
             std::string responseText = j_res["response"];
             
-            // --- MAGIA REGEX (Wyrażenia regularne) ---
+            // 
             // Czasem AI mimo próśb dopisze coś od siebie, np. "Oto wynik: { ... }".
             // Ten kod szuka tekstu, który jest wewnątrz klamerek { }, żeby wyciąć tylko czyste dane.
             std::smatch match;
@@ -65,8 +65,8 @@ MealData OllamaClient::askForData(std::string mealName) {
                 auto j = json::parse(match.str());
                 
                 // 5. PRZEPISYWANIE DANYCH DO OBIEKTU C++
-                // Używamy setterów, które zdefiniowałeś w MealData.hpp
-                // Metoda .value("klucz", 0) oznacza: weź wartość, a jak jej nie ma, to daj 0.
+                // Używamy setterów, które zdefiniowalismy w MealData.hpp
+               
                 data.setKcal(j.value("kcal", 0));
                 data.setProtein(j.value("protein", 0));
                 data.setFat(j.value("fat", 0));

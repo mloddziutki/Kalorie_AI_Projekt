@@ -93,61 +93,20 @@ $(function(){initNavTree('classhttplib_1_1detail_1_1_path_params_matcher.html','
 <div class="contents">
 
 <p><code>#include &lt;<a class="el" href="httplib_8h_source.html">httplib.h</a>&gt;</code></p>
-<div class="dynheader">
-Inheritance diagram for httplib::detail::PathParamsMatcher:</div>
-<div class="dyncontent">
- <div class="center">
-  <img src="classhttplib_1_1detail_1_1_path_params_matcher.png" usemap="#httplib_3A_3Adetail_3A_3APathParamsMatcher_map" alt=""/>
-  <map id="httplib_3A_3Adetail_3A_3APathParamsMatcher_map" name="httplib_3A_3Adetail_3A_3APathParamsMatcher_map">
-<area href="classhttplib_1_1detail_1_1_matcher_base.html" alt="httplib::detail::MatcherBase" shape="rect" coords="0,0,201,24"/>
-  </map>
-</div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 id="header-pub-methods" class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a6b0b367cc4db29c2f81bd3e858da0e10" id="r_a6b0b367cc4db29c2f81bd3e858da0e10"><td class="memItemLeft"><a id="a6b0b367cc4db29c2f81bd3e858da0e10" name="a6b0b367cc4db29c2f81bd3e858da0e10"></a>
 &#160;</td><td class="memItemRight"><b>PathParamsMatcher</b> (const std::string &amp;pattern)</td></tr>
-<tr class="memitem:aa0446fa3fcb729f471f23b0e8ff71127" id="r_aa0446fa3fcb729f471f23b0e8ff71127"><td class="memItemLeft">bool&#160;</td><td class="memItemRight"><a class="el" href="#aa0446fa3fcb729f471f23b0e8ff71127">match</a> (<a class="el" href="structhttplib_1_1_request.html">Request</a> &amp;request) const override</td></tr>
-<tr class="inherit_header pub_methods_classhttplib_1_1detail_1_1_matcher_base"><td colspan="2" onclick="javascript:dynsection.toggleInherit('pub_methods_classhttplib_1_1detail_1_1_matcher_base')"><span class="dynarrow"><span class="arrowhead closed"></span></span>Public Member Functions inherited from <a class="el" href="classhttplib_1_1detail_1_1_matcher_base.html">httplib::detail::MatcherBase</a></td></tr>
-<tr class="memitem:af1f324851154b9cf7ea72f46a6bbaade inherit pub_methods_classhttplib_1_1detail_1_1_matcher_base" id="r_af1f324851154b9cf7ea72f46a6bbaade"><td class="memItemLeft">
-&#160;</td><td class="memItemRight"><b>MatcherBase</b> (std::string pattern)</td></tr>
-<tr class="memitem:afb63c83579942c897d27348d0fc69875 inherit pub_methods_classhttplib_1_1detail_1_1_matcher_base" id="r_afb63c83579942c897d27348d0fc69875"><td class="memItemLeft">
-const std::string &amp;&#160;</td><td class="memItemRight"><b>pattern</b> () const</td></tr>
+<tr class="memitem:aa0446fa3fcb729f471f23b0e8ff71127" id="r_aa0446fa3fcb729f471f23b0e8ff71127"><td class="memItemLeft"><a id="aa0446fa3fcb729f471f23b0e8ff71127" name="aa0446fa3fcb729f471f23b0e8ff71127"></a>
+bool&#160;</td><td class="memItemRight"><b>match</b> (Request &amp;request) const override</td></tr>
 </table>
 <a name="details" id="details"></a><h2 id="header-details" class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Captures parameters in request path and stores them in Request::path_params</p>
 <p>Capture name is a substring of a pattern from : to /. The rest of the pattern is matched against the request path directly Parameters are captured starting from the next character after the end of the last matched static pattern fragment until the next /.</p>
 <p>Example pattern: "/path/fragments/:capture/more/fragments/:second_capture" Static fragments: "/path/fragments/", "more/fragments/"</p>
 <p>Given the following request path: "/path/fragments/:1/more/fragments/:2" the resulting capture will be {{"capture", "1"}, {"second_capture", "2"}} </p>
-</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Member Function Documentation</h2>
-<a id="aa0446fa3fcb729f471f23b0e8ff71127" name="aa0446fa3fcb729f471f23b0e8ff71127"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa0446fa3fcb729f471f23b0e8ff71127">&#9670;&#160;</a></span>match()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool httplib::detail::PathParamsMatcher::match </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structhttplib_1_1_request.html">Request</a> &amp;</td>          <td class="paramname"><span class="paramname"><em>request</em></span></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel inline">inline</span><span class="mlabel override">override</span><span class="mlabel virtual">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="classhttplib_1_1detail_1_1_matcher_base.html">httplib::detail::MatcherBase</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>C:/Kalorie_Projekt/include/<a class="el" href="httplib_8h_source.html">httplib.h</a></li>
 </ul>
 </div><!-- contents -->

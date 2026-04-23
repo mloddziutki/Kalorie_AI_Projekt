@@ -30,7 +30,7 @@ using json = nlohmann::json;
 
 /**
  * @class CalorieApp
- * @brief Główne okno aplikacji interfejsu użytkownika (GUI).
+ * @brief Główne okno aplikacji interfejsu użytkownika 
  * * Klasa dziedziczy po QWidget i zarządza wszystkimi elementami widocznymi na ekranie
  * oraz listą posiłków zapisaną w pamięci (dayLog).
  */
@@ -38,13 +38,13 @@ class CalorieApp : public QWidget {
 public:
     /**
      * @brief Konstruktor klasy CalorieApp.
-     * * Tutaj budujemy wygląd okna: przyciski, tabelę, kolory i układ (Layout).
+     * * Tutaj budujemy wygląd okna: przyciski, tabelę, kolory i układ .
      * Wywołujemy też wczytywanie danych z dysku na starcie.
      */
     CalorieApp() {
         setWindowTitle("Dziennik Kalorii AI");
         resize(650, 550); 
-        setStyleSheet("background-color: #f5f5f5;"); // Ustawienie jasnoszarego tła
+        setStyleSheet("background-color: #f5f5f5;"); 
 
         // Główny układ pionowy - układa elementy jeden pod drugim
         auto* layout = new QVBoxLayout(this);
@@ -101,8 +101,8 @@ public:
         layout->addWidget(table);
         layout->addLayout(bottomLayout);
 
-        // --- POŁĄCZENIA SYGNAŁÓW (Signals & Slots) ---
-        // Mówimy programowi: "Gdy klikniesz ten guzik, wykonaj tę funkcję"
+        // POŁĄCZENIA SYGNAŁÓW 
+        // Gdy klikniesz ten guzik, wykonaj tę funkcję
         connect(btnAnalyze, &QPushButton::clicked, this, &CalorieApp::onAnalyze);
         connect(btnShowChart, &QPushButton::clicked, this, &CalorieApp::onShowChart);
         connect(btnSave, &QPushButton::clicked, this, &CalorieApp::onSave);
@@ -128,14 +128,14 @@ private slots:
         input->setDisabled(true);
         progressBar->setVisible(true); 
 
-        // --- WIELOWĄTKOWOŚĆ (wymóg na 4.0) ---
+        // WIELOWĄTKOWOŚĆ 
         fut = std::async(std::launch::async, [this, text]() {
             try {
                 OllamaClient client("llama3");
                 MealData data = client.askForData(text); // Pytamy AI o liczby
                 data.setRawDescription(text);
 
-                // Powrót do wątku głównego, aby zaktualizować okno (Qt nie pozwala zmieniać GUI z innego wątku)
+                // Powrót do wątku głównego, aby zaktualizować okno 
                 QMetaObject::invokeMethod(this, [this, data]() {
                     if (data.getKcal() > 0) {
                         dayLog.push_back(data); // Dodajemy do naszej listy
@@ -210,7 +210,7 @@ private slots:
 
                 std::ofstream file("dziennik.json");
                 if (file.is_open()) {
-                    file << j_array.dump(4); // Zapis z wcięciami (4 spacje)
+                    file << j_array.dump(4); // Zapis 
                     file.close();
                     success = true;
                 }

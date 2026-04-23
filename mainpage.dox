@@ -1,0 +1,17 @@
+/**
+ * @mainpage Projekt: Licznik Kalorii AI
+ * * @section intro_sec Wstęp
+ * Witaj w dokumentacji technicznej projektu Licznik Kalorii AI. 
+ * Program służy do automatycznej analizy posiłków przy użyciu lokalnych modeli LLM.
+ * * @section features_sec Kluczowe funkcjonalności
+ * - Analiza tekstu naturalnego (np. "zjadłem dwa jabłka") przez model Llama3.
+ * - Wyliczanie wartości energetycznej oraz makroskładników (B, T, W).
+ * - Wizualizacja danych w formie wykresów kołowych (Python Matplotlib).
+ * - Asynchroniczne przetwarzanie danych (Multithreading) zapewniające płynność GUI.
+ * - System testów jednostkowych weryfikujący poprawność struktur danych.
+ * * @section tech_sec Technologie
+ * - Język: C++17
+ * - Framework: Qt6
+ * - Integracja AI: Ollama REST API
+ * - Skrypty zewnętrzne: Python 3
+ */

@@ -9,10 +9,11 @@ var searchData=
   ['setrawdescription_6',['setRawDescription',['../class_meal_data.html#a7815fe6773c9697ad91b30b3ab7ad1c3',1,'MealData']]],
   ['socket_7',['Socket',['../structhttplib_1_1_client_impl_1_1_socket.html',1,'httplib::ClientImpl']]],
   ['socketstream_8',['SocketStream',['../classhttplib_1_1detail_1_1_socket_stream.html',1,'httplib::detail']]],
-  ['spełnione_20wymagania_3a_9',['Spełnione wymagania:',['../C:/Kalorie_Projekt/README.md#autotoc_md2',1,'']]],
+  ['spełnione_20wymagania_3a_9',['Spełnione wymagania:',['../C:/Kalorie_Projekt/README.md#autotoc_md3',1,'']]],
   ['sseclient_10',['SSEClient',['../classhttplib_1_1sse_1_1_s_s_e_client.html',1,'httplib::sse']]],
   ['ssemessage_11',['SSEMessage',['../structhttplib_1_1sse_1_1_s_s_e_message.html',1,'httplib::sse']]],
   ['stream_12',['Stream',['../classhttplib_1_1_stream.html',1,'httplib']]],
   ['stream_5fline_5freader_13',['stream_line_reader',['../classhttplib_1_1detail_1_1stream__line__reader.html',1,'httplib::detail']]],
-  ['streamhandle_14',['StreamHandle',['../structhttplib_1_1_client_impl_1_1_stream_handle.html',1,'httplib::ClientImpl']]]
+  ['streamhandle_14',['StreamHandle',['../structhttplib_1_1_client_impl_1_1_stream_handle.html',1,'httplib::ClientImpl']]],
+  ['systemowe_15',['Wymagania systemowe',['../C:/Kalorie_Projekt/README.md#autotoc_md4',1,'']]]
 ];

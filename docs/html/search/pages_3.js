@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['instrukcja_20uruchomienia_3a_0',['Instrukcja uruchomienia:',['../C:/Kalorie_Projekt/README.md#autotoc_md3',1,'']]]
+  ['funkcjonalności_0',['Kluczowe Funkcjonalności',['../C:/Kalorie_Projekt/README.md#autotoc_md1',1,'']]],
+  ['funkcjonalności_1',['Kluczowe funkcjonalności',['../index.html#features_sec',1,'']]]
 ];

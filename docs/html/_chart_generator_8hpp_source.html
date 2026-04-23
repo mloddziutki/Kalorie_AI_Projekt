@@ -135,9 +135,9 @@ $(function(){initNavTree('_chart_generator_8hpp_source.html','',''); });
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>               &lt;&lt; <span class="stringliteral">&quot;info_text = f&#39;Lacznie: Bialko {&quot;</span> &lt;&lt; totalProtein &lt;&lt; <span class="stringliteral">&quot;}g | Tluszcz {&quot;</span> &lt;&lt; totalFat &lt;&lt; <span class="stringliteral">&quot;}g | Wegle {&quot;</span> &lt;&lt; totalCarbs &lt;&lt; <span class="stringliteral">&quot;}g&#39;\n&quot;</span></div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>               &lt;&lt; <span class="stringliteral">&quot;plt.figtext(0.5, 0.05, info_text, ha=&#39;center&#39;, fontsize=12, bbox=dict(facecolor=&#39;orange&#39;, alpha=0.2))\n&quot;</span></div>
 <div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>               &lt;&lt; <span class="stringliteral">&quot;plt.show()\n&quot;</span>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        script.close(); <span class="comment">// Kończymy pisać skrypt</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        script.close(); </div>
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="comment">// --- 3. URUCHAMIANIE PROCESU (IPC - Inter-Process Communication) ---</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        <span class="comment">// URUCHAMIANIE PROCESU </span></div>
 <div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="comment">// Sprawdzamy system operacyjny, żeby wiedzieć jak zawołać Pythona</span></div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#ifdef _WIN32</span></div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>        QString pythonCmd = <span class="stringliteral">&quot;python&quot;</span>;  <span class="comment">// Na Windows zazwyczaj wystarczy &quot;python&quot;</span></div>
@@ -146,7 +146,7 @@ $(function(){initNavTree('_chart_generator_8hpp_source.html','',''); });
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        <span class="comment">// QProcess::startDetached odpala Pythona jako zupełnie osobny proces.</span></div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <span class="comment">// Nasz program w C++ nie musi czekać, aż zamkniesz okno z wykresem.</span></div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        </div>
 <div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        QProcess::startDetached(pythonCmd, QStringList() &lt;&lt; <span class="stringliteral">&quot;generated_chart.py&quot;</span>);</div>
 <div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>    }</div>
 </div>
