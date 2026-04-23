@@ -1,0 +1,27 @@
+var searchData=
+[
+  ['unauthorized_5f401_0',['Unauthorized_401',['../namespacehttplib.html#ade1f5845ce6b8d8fdb3a56676db48fbaa8a44ec2902cdab7dd99c16a6b7e5cea9',1,'httplib']]],
+  ['unavailableforlegalreasons_5f451_1',['UnavailableForLegalReasons_451',['../namespacehttplib.html#ade1f5845ce6b8d8fdb3a56676db48fbaa22a889a3db211962127f0225fab6d0ee',1,'httplib']]],
+  ['unescape_5fabstract_5fnamespace_5funix_5fdomain_2',['unescape_abstract_namespace_unix_domain',['../namespacehttplib_1_1detail.html#aec462af74cad7de8d5d4283b4eae60df',1,'httplib::detail']]],
+  ['unhandled_3',['Unhandled',['../classhttplib_1_1_server.html#a68cf8c175834bde61120ac4216ea943ba6fe9e16b804e1ce4ac5868be60615007',1,'httplib::Server']]],
+  ['unicode_4',['UNICODE',['../moc__predefs_8h.html#a09ecca53f2cd1b8d1c566bedb245e141',1,'moc_predefs.h']]],
+  ['unittests_5',['UnitTests',['../class_unit_tests.html',1,'']]],
+  ['unknown_6',['Unknown',['../namespacehttplib.html#a46ff5da925971ebebf2c5693e367f24aa88183b946cc5f0e8c96b2e66e1c74a7e',1,'httplib']]],
+  ['unordered_5fset_7',['unordered_set',['../namespacehttplib_1_1detail_1_1case__ignore.html#a06a9fce19377438022936b5f999797ef',1,'httplib::detail::case_ignore']]],
+  ['unprocessablecontent_5f422_8',['UnprocessableContent_422',['../namespacehttplib.html#ade1f5845ce6b8d8fdb3a56676db48fbaada8c01f6051d03f553a6cc1fbd340cd5',1,'httplib']]],
+  ['unsupportedaddressfamily_9',['UnsupportedAddressFamily',['../namespacehttplib.html#a46ff5da925971ebebf2c5693e367f24aa9e4a0e45923c6a6f02591b915d4da6ba',1,'httplib']]],
+  ['unsupporteddata_10',['UnsupportedData',['../namespacehttplib_1_1ws.html#a1c11861125d9a51da5a3a0ce9772193eaa63d4c1207867216c93e257bfa05e818',1,'httplib::ws']]],
+  ['unsupportedmediatype_5f415_11',['UnsupportedMediaType_415',['../namespacehttplib.html#ade1f5845ce6b8d8fdb3a56676db48fbaa49314619c75f8c18833e0232edb5a0c9',1,'httplib']]],
+  ['unsupportedmultipartboundarychars_12',['UnsupportedMultipartBoundaryChars',['../namespacehttplib.html#a46ff5da925971ebebf2c5693e367f24aae9bf6daa3624423795b289a290a59505',1,'httplib']]],
+  ['unused_5f306_13',['unused_306',['../namespacehttplib.html#ade1f5845ce6b8d8fdb3a56676db48fbaa5a80775e405474653d56b93cbbbfc8b5',1,'httplib']]],
+  ['upgraderequired_5f426_14',['UpgradeRequired_426',['../namespacehttplib.html#ade1f5845ce6b8d8fdb3a56676db48fbaaf9c473a4f9745602da8798077bf83278',1,'httplib']]],
+  ['upload_5fprogress_15',['upload_progress',['../structhttplib_1_1_request.html#a4b255e1257b3e81c90c6dea2b0efdeb1',1,'httplib::Request']]],
+  ['uploadformdata_16',['UploadFormData',['../structhttplib_1_1_upload_form_data.html',1,'httplib']]],
+  ['uploadformdataitems_17',['UploadFormDataItems',['../namespacehttplib.html#a41893d50ca6a15433fa3a1f2261a85d2',1,'httplib']]],
+  ['uploadprogress_18',['UploadProgress',['../namespacehttplib.html#ae07e61141843557c7faff6f208ab41dd',1,'httplib']]],
+  ['uritoolong_5f414_19',['UriTooLong_414',['../namespacehttplib.html#ade1f5845ce6b8d8fdb3a56676db48fbaa3c6599766d38c5e1430de9da091c5487',1,'httplib']]],
+  ['uruchomienia_3a_20',['Instrukcja uruchomienia:',['../C:/Kalorie_Projekt/README.md#autotoc_md3',1,'']]],
+  ['use_5fif2ip_21',['USE_IF2IP',['../httplib_8h.html#aa546fa704e96e7242f4626183e02f61d',1,'httplib.h']]],
+  ['useproxy_5f305_22',['UseProxy_305',['../namespacehttplib.html#ade1f5845ce6b8d8fdb3a56676db48fbaa9e582177d52a4358f22ba483e4224f7e',1,'httplib']]],
+  ['user_5fdata_23',['user_data',['../structhttplib_1_1_response.html#aad5e0c8629962d0aca4d78eeb500078a',1,'httplib::Response']]]
+];

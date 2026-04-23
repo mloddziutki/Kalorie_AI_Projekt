@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['random_5fstring_0',['random_string',['../namespacehttplib_1_1detail.html#aa473f5aff2d646f2801456f003183b1b',1,'httplib::detail']]],
+  ['range_5ferror_1',['range_error',['../namespacehttplib_1_1detail.html#ab0340f26816e1a1a5bbd6d1a2c79816d',1,'httplib::detail']]],
+  ['read_2',['read',['../classhttplib_1_1_stream.html#a58adfc27d0672f6a2f293168757861b2',1,'httplib::Stream::read()'],['../structhttplib_1_1detail_1_1_body_reader.html#ac3f462e4aa63e27c8da8cce5882647c4',1,'httplib::detail::BodyReader::read()'],['../structhttplib_1_1_client_impl_1_1_stream_handle.html#a5f3a8f4706d254a29a91842fdcb9a9e2',1,'httplib::ClientImpl::StreamHandle::read()'],['../classhttplib_1_1detail_1_1_buffer_stream.html#af50ac3bf9b3b3dfd761c89f0f3f71578',1,'httplib::detail::BufferStream::read()'],['../classhttplib_1_1ws_1_1_web_socket.html#a54b41b099c28865936412e088e02bc61',1,'httplib::ws::WebSocket::read()'],['../classhttplib_1_1ws_1_1_web_socket_client.html#a1a41a75d1dbfde40c195a37fb36aa3fa',1,'httplib::ws::WebSocketClient::read()'],['../classhttplib_1_1detail_1_1_socket_stream.html#a7fff1278536273efeb9c0e9adad57d62',1,'httplib::detail::SocketStream::read()']]],
+  ['read_5fall_3',['read_all',['../classhttplib_1_1stream_1_1_result.html#ac4ad9eddde795d09ce4e3d040540beda',1,'httplib::stream::Result']]],
+  ['read_5fbody_5fcontent_4',['read_body_content',['../namespacehttplib_1_1detail.html#a538c4eb80fe088d9babbda49f807be83',1,'httplib::detail']]],
+  ['read_5fcontent_5',['read_content',['../namespacehttplib_1_1detail.html#a3c36f9fed86fc4682677590588d09981',1,'httplib::detail']]],
+  ['read_5fcontent_5fchunked_6',['read_content_chunked',['../namespacehttplib_1_1detail.html#ae4a5b6ed2475628fb6f363a8b2cd8c12',1,'httplib::detail']]],
+  ['read_5fcontent_5fwith_5flength_7',['read_content_with_length',['../namespacehttplib_1_1detail.html#a3906d6dad64bd24f7104082c7bf4f87e',1,'httplib::detail']]],
+  ['read_5fcontent_5fwithout_5flength_8',['read_content_without_length',['../namespacehttplib_1_1detail.html#ab99e1cbd112b945ae391c0cade32284c',1,'httplib::detail']]],
+  ['read_5ferror_9',['read_error',['../classhttplib_1_1stream_1_1_result.html#ae40e609d91bd333344f1cc866bfaa16d',1,'httplib::stream::Result']]],
+  ['read_5fheaders_10',['read_headers',['../namespacehttplib_1_1detail.html#aeb8db950848e27227eb130f609b293cf',1,'httplib::detail']]],
+  ['read_5fpayload_11',['read_payload',['../structhttplib_1_1detail_1_1_chunked_decoder.html#a2a876737cfa8aab6db33fae682fb743b',1,'httplib::detail::ChunkedDecoder']]],
+  ['read_5fsocket_12',['read_socket',['../namespacehttplib_1_1detail.html#ab57c043e9d70df4cace18a07f9fbeeea',1,'httplib::detail']]],
+  ['read_5fwebsocket_5fframe_13',['read_websocket_frame',['../namespacehttplib_1_1ws_1_1impl.html#a48e2a2a6d0485ca3ee78647793d7992a',1,'httplib::ws::impl']]],
+  ['read_5fwebsocket_5fupgrade_5fresponse_14',['read_websocket_upgrade_response',['../namespacehttplib_1_1detail.html#a84a87fa4cae587dae8acd569a1f7eafb',1,'httplib::detail']]],
+  ['redirect_15',['redirect',['../namespacehttplib_1_1detail.html#a5617aea1da053ebdb2bac81742a25fc0',1,'httplib::detail']]],
+  ['regexmatcher_16',['RegexMatcher',['../classhttplib_1_1detail_1_1_regex_matcher.html#afb07c1bd6712a47bdef65fe392ed043d',1,'httplib::detail::RegexMatcher']]],
+  ['release_17',['release',['../structhttplib_1_1detail_1_1scope__exit.html#a401423b03d78ba815a8d464c53299b44',1,'httplib::detail::scope_exit']]],
+  ['remove_5fmount_5fpoint_18',['remove_mount_point',['../classhttplib_1_1_server.html#aa6937f9f0804b55f1a0af1673118acd5',1,'httplib::Server']]],
+  ['request_19',['request',['../classhttplib_1_1ws_1_1_web_socket.html#a376f80cc38ecf817587e1981a4f594ef',1,'httplib::ws::WebSocket']]],
+  ['reset_20',['reset',['../classhttplib_1_1any.html#a13aa6422b0f532425702c75ec33d9598',1,'httplib::any']]],
+  ['response_21',['Response',['../structhttplib_1_1_response.html#a42df6b67dcf32c2cd4bc732c52d49b3e',1,'httplib::Response::Response()=default'],['../structhttplib_1_1_response.html#ae5f48d4c40fe15b19032e77a3da32de7',1,'httplib::Response::Response(const Response &amp;)=default'],['../structhttplib_1_1_response.html#aed3a526fe753e1c86ca3a848ccb26564',1,'httplib::Response::Response(Response &amp;&amp;)=default']]],
+  ['result_22',['Result',['../classhttplib_1_1_result.html#a42c9e607826214336012946e89a68768',1,'httplib::Result::Result()=default'],['../classhttplib_1_1_result.html#aa6badab908c06e5da630a303de27fedf',1,'httplib::Result::Result(std::unique_ptr&lt; Response &gt; &amp;&amp;res, Error err, Headers &amp;&amp;request_headers=Headers{})'],['../classhttplib_1_1stream_1_1_result.html#a2d56190be9b9c4f85421633dd8338f07',1,'httplib::stream::Result::Result()'],['../classhttplib_1_1stream_1_1_result.html#a596a017265282b9548302db32abdac7b',1,'httplib::stream::Result::Result(ClientImpl::StreamHandle &amp;&amp;handle, size_t chunk_size=8192)'],['../classhttplib_1_1stream_1_1_result.html#aad536bde803b6852914ad8fec687efb8',1,'httplib::stream::Result::Result(Result &amp;&amp;other) noexcept'],['../classhttplib_1_1stream_1_1_result.html#aed6ba8c585678c24af624305bb7ff225',1,'httplib::stream::Result::Result(const Result &amp;)=delete']]],
+  ['runall_23',['runAll',['../class_unit_tests.html#a5bcff6162b85441b604abaff0df78fbb',1,'UnitTests']]],
+  ['runtests_24',['runTests',['../tests_8cpp.html#a5dcb537699bebb9e9db36ab19c5aacf7',1,'tests.cpp']]]
+];
